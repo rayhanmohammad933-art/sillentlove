@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILENTLOVE - Send Messages Anonymously</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tampilan 1: Formulir Data Diri -->
+        <div id="profile-form">
+            <h1>Welcome to SILENTLOVE</h1>
+            <p>Fill in your details (saved automatically):</p>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="number" id="age" placeholder="Your Age" required>
+            <input type="text" id="hobby" placeholder="Your Hobby" required>
+            <input type="text" id="work-school" placeholder="Your Workplace/School" required>
+            <button id="save-profile">Save & Continue</button>
+        </div>
+
+        <!-- Tampilan 2: Sapa Pencipta -->
+        <div id="creator-greet" class="hidden">
+            <h1>Say Hi to the Creator!</h1>
+            <p>Follow me on Instagram: <a href="https://www.instagram.com/rayhanmohammad?igsh=MWR6d2x5cDN2c3d1" target="_blank" style="color: #ff69b4;">@rayhanmohammad</a></p>
+            <button id="next-to-room">Next (Skip if you want)</button>
+        </div>
+
+        <!-- Tampilan 3: Room Setup (Baru: Buat atau Join Room) -->
+        <div id="room-setup" class="hidden">
+            <h1>Join or Create a Room</h1>
+            <p>Create a new room code (share it with others) or join an existing one:</p>
+            <input type="text" id="new-room-code" placeholder="Enter new room code (e.g., LOVE123)">
+            <button id="create-room">Create Room</button>
+            <hr>
+            <input type="text" id="join-room-code" placeholder="Enter room code to join">
+            <button id="join-room">Join Room</button>
+        </div>
+
+        <!-- Tampilan 4: Chat Interface -->
+        <div id="chat-interface" class="hidden">
+            <h1>SILENTLOVE Chat - Room: <span id="current-room"></span></h1>
+            <div id="user-list">
+                <h3>Users in this Room:</h3>
+                <ul id="users"></ul>
+            </div>
+            <div id="chat-messages"></div>
+            <textarea id="message-input" placeholder="Type your message..."></textarea>
+            <button id="send-message">Send</button>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
