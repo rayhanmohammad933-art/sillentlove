@@ -1,7 +1,6 @@
-/* CSS Styling */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ff69b4, #ff1493); /* Pink to Red gradient */
+    background: linear-gradient(to bottom, #FF0000, #FFC0CB);
     color: white;
     margin: 0;
     padding: 0;
@@ -12,16 +11,16 @@ body {
     overflow: hidden;
 }
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 h1 {
-    color: #ff69b4;
+    color: #FFC0CB;
 }
 input, textarea, button {
     width: 100%;
@@ -36,42 +35,36 @@ input, textarea {
     color: black;
 }
 button {
-    background: #ff1493;
+    background: #FF0000;
     color: white;
     cursor: pointer;
     transition: background 0.3s;
 }
 button:hover {
-    background: #dc143c;
+    background: #CC0000;
 }
 .hidden {
     display: none;
 }
-#chat-messages {
-    height: 200px;
+.chat-messages {
+    height: 300px;
     overflow-y: auto;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
     padding: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 .message {
     margin: 5px 0;
     padding: 5px;
-    background: rgba(255, 255, 255, 0.3);
+    background: #FFC0CB;
+    color: black;
     border-radius: 5px;
 }
-#user-list {
-    margin-top: 20px;
-    text-align: left;
+a {
+    color: #FFC0CB;
+    text-decoration: none;
 }
-#user-list ul {
-    list-style: none;
-    padding: 0;
-}
-#user-list li {
-    background: rgba(255, 255, 255, 0.2);
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 5px;
+a:hover {
+    text-decoration: underline;
 }
